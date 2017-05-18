@@ -20,10 +20,11 @@ const initialState = {
 const mutations = {
   [FETCH_POKELIST] (state, pokelist){
     state.pokelist = pokelist,
+    state.pokemon = null,
     state.isFetching = false
   },
   [FETCH_POKEMON] (state, pokemon){
-    state.pokemon = pokemon
+    state.pokemon = pokemon,
     state.isFetching = false
   },
   [GETTING] (state){

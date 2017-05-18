@@ -10,8 +10,9 @@ import {
 
 const API_URL = 'http://pokeapi.co/api/v2/';
 
-export function fetchPokelist({commit}){
-  axios.get((API_URL+'pokemon'))
+export function fetchPokelist({commit}, index){
+  axios.get((API_URL+'pokemon'),
+        {params: { offset: index}})
     .then((response) => {
     commit(GETTING),
     commit(FETCH_POKELIST, response.data)

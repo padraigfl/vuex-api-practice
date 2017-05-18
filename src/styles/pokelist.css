@@ -1,0 +1,13 @@
+.pokelist .pokelist-entry{
+  background-color: #FFCCDE;
+  color: #303060;
+  display: block;
+  width: 100%;
+  margin: 16px auto;
+  padding: 16px 32px;
+  font-weight: bold;
+}
+.pokelist .pokelist-entry:visited{
+  background-color: #FFDDDF;
+  color: #3A3A70;
+}
