@@ -1,6 +1,14 @@
 # vue-pokeapi
 
-> a simple vuex project connected to a read only api
+A simple vuex project connected to a read only api, built with vue-cli it uses all of the default setup options as listed below.
+
+Tests are somewhat limited and currently broken due to the inefficient loading processes I seem to have in place, likely using the wrong trigger events to initiate some changes but the watchers seem slow in general too.
+
+
+`npm run dev` and `npm run test` are the tested operations
+
+
+
 
 ## Build Setup
 
@@ -26,5 +34,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
